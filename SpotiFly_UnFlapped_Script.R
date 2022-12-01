@@ -55,7 +55,7 @@ species_frequency <- as.data.frame(table(ebird2022$Common.Name))
 #Rename columns 
 colnames(species_frequency) <- c("Species", "Frequency")
 
-#6. Sort by frequency 
+##6. Sort by frequency 
 library(tidyverse)
 ebird2022 <- species_frequency %>%
   arrange(desc(Frequency))
@@ -68,5 +68,10 @@ head(ebird2022)
 
 #Make a histogram of this 
 barplot(ebird2022$Frequency)
+
+##7. Saving data as .csv. 
+write.csv(ebird2022, "eBird2022.csv")
+
+
    
 
