@@ -10,4 +10,5 @@ The outputs are:
 - Frequency table for each species, i.e. the number of checklists in which each has been reported.
 - A histogram of frequency data.
 
+It's messy, but hey!
 
